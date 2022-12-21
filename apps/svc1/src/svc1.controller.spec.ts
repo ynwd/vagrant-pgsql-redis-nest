@@ -16,7 +16,7 @@ describe('Svc1Controller', () => {
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
-      expect(svc1Controller.getSvc1('')).toBe('Hello World!');
+      expect(svc1Controller.getHello()).toBe('Hello World!');
     });
   });
 });

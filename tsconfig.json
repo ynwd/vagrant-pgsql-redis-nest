@@ -17,19 +17,6 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {
-      "@app/mylib": [
-        "libs/mylib/src"
-      ],
-      "@app/mylib/*": [
-        "libs/mylib/src/*"
-      ],
-      "@app/mylib1": [
-        "libs/mylib1/src"
-      ],
-      "@app/mylib1/*": [
-        "libs/mylib1/src/*"
-      ]
-    }
+    "paths": {}
   }
 }

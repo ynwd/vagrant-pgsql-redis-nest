@@ -35,24 +35,6 @@
       "compilerOptions": {
         "tsConfigPath": "apps/svc2/tsconfig.app.json"
       }
-    },
-    "mylib": {
-      "type": "library",
-      "root": "libs/mylib",
-      "entryFile": "index",
-      "sourceRoot": "libs/mylib/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/mylib/tsconfig.lib.json"
-      }
-    },
-    "mylib1": {
-      "type": "library",
-      "root": "libs/mylib1",
-      "entryFile": "index",
-      "sourceRoot": "libs/mylib1/src",
-      "compilerOptions": {
-        "tsConfigPath": "libs/mylib1/tsconfig.lib.json"
-      }
     }
   }
 }
