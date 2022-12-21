@@ -266,20 +266,20 @@ That's it. Next we will call above simple service from app service.
         imports: [
             ConfigModule.forRoot({ isGlobal: true }),
             ClientsModule.registerAsync([
-            {
-                name: 'GREETING_SERVICE',
-                useFactory: async (configService: ConfigService) => {
-                return {
-                    transport: Transport.REDIS,
-                    options: {
-                    host: configService.get<string>('REDIS_HOST'),
-                    port: configService.get<number>('REDIS_PORT'),
-                    password: configService.get<string>('REDIS_PASSWORD'),
+                {
+                    name: 'GREETING_SERVICE',
+                    useFactory: async (configService: ConfigService) => {
+                        return {
+                            transport: Transport.REDIS,
+                            options: {
+                                host: configService.get<string>('REDIS_HOST'),
+                                port: configService.get<number>('REDIS_PORT'),
+                                password: configService.get<string>('REDIS_PASSWORD'),
+                            },
+                        };
                     },
-                };
+                    inject: [ConfigService],
                 },
-                inject: [ConfigService],
-            },
             ]),
         ],
         controllers: [ApiController],
