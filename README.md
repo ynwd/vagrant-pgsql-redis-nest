@@ -360,3 +360,10 @@ That's it. Next we will call above simple service from app service.
 
 
     ```
+
+5. That's it. Start the server
+    ```
+    nest start
+    ```
+
+    Then hit the endpoint created.
