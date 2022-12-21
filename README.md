@@ -147,9 +147,9 @@ In these steps we will change default http transport to redis.
 
     @Controller()
     export class Svc1Controller {
-    constructor(private readonly svc1Service: Svc1Service) {}
+        constructor(private readonly svc1Service: Svc1Service) {}
 
-    @MessagePattern({ cmd: 'svc1' })
+        @MessagePattern({ cmd: 'svc1' })
         async getSvc1(name: string): Promise<string> {
             return this.svc1Service.getHello(name);
         }
